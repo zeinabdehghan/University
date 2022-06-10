@@ -1,5 +1,10 @@
 #include <iostream>
 #include <regex>
-using namespace std;
+#include "Course.h"
 
-}
+
+using namespace std;
+int main(){
+Course c();
+
+};

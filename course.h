@@ -1,18 +1,23 @@
 #ifndef CPP_COURSE_H
 #define CPP_COURSE_H
 #include <string>
-using namespace std;
+#include <iostream>
 
 class Course {
 private:
-    string name;
+    std :: string name;
     int unit;
     double * mark;
 public:
-    Course(string name ,int unit , double mark );
+    Course(std :: string name ,int unit , double mark );
     Course(const Course & r);
     ~Course();
-
+    friend std:: ostream & operator << (std :: ostream &output,  Course c);
+    friend std:: istream & operator >> (std:: istream &input,  Course &c);
+    void set(std ::string n , int u , double m);
+    std :: string get_name();
+    double  get_mark();
+    int get_unit();
 };
 
 
