@@ -29,7 +29,7 @@ ostream &operator<<(ostream &output, const Course c) {
 istream &operator>>(istream &input, Course &c) {
     cin >> c.name;
     cin >> c.unit;
-    cin >> reinterpret_cast<Course &>(c.mark);
+    cin >> *c.mark;
     return input;
 }
 void Course::set(string n, int u, double m) {

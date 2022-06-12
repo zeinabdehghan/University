@@ -3,4 +3,4 @@ project(cpp)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(cpp main.cpp course.cpp course.h)
+add_executable(cpp main.cpp course.cpp course.h Person.cpp Person.h Student.cpp Student.h)
