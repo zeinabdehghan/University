@@ -47,3 +47,45 @@ University::~University() {
     delete this->ss;
 
 }
+
+double University::averageGpa() {
+    double temp=0;
+    double average;
+    for (int i = 0; i < numOfStudent; ++i) {
+        temp += ss[i]->gpa();
+    }
+    average = temp / numOfStudent;
+    return average;
+}
+
+double University::averageGpaOfField(string field) {
+    double temp=0;
+    double tmp =0;
+    double avg;
+    for (int i = 0; i < numOfStudent; ++i) {
+        if (field ==  ss[i]->getFieldOfStudy()){
+        temp += ss[i]->gpa();
+        tmp++; }
+    }avg = temp /tmp;
+    return avg ;
+}
+
+bool University::isEnoughBudget() {
+    double sSalary=0;
+    double pSalary;
+    for (int i = 0; i < numOfStudent; ++i) {
+       sSalary += ss[i]->calculateSalary();
+    }
+    for (int i = 0; i <numOfProfessor ; ++i) {
+        pSalary += pp[i]->calculateSalary();
+    }
+
+    double wholeSalary =sSalary +pSalary;
+    double tmp = budget - wholeSalary;
+    if (tmp < 0 ){
+    return false;}
+
+    return true;
+}
+
+
