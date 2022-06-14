@@ -73,6 +73,18 @@ build CMakeFiles/cpp.dir/Student.cpp.obj: CXX_COMPILER__cpp_Debug C$:/Users/Pars
   OBJECT_DIR = CMakeFiles\cpp.dir
   OBJECT_FILE_DIR = CMakeFiles\cpp.dir
 
+build CMakeFiles/cpp.dir/Professor.cpp.obj: CXX_COMPILER__cpp_Debug C$:/Users/Pars/Desktop/cpp/Professor.cpp || cmake_object_order_depends_target_cpp
+  DEP_FILE = CMakeFiles\cpp.dir\Professor.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\cpp.dir
+
+build CMakeFiles/cpp.dir/University.cpp.obj: CXX_COMPILER__cpp_Debug C$:/Users/Pars/Desktop/cpp/University.cpp || cmake_object_order_depends_target_cpp
+  DEP_FILE = CMakeFiles\cpp.dir\University.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\cpp.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target cpp
@@ -81,7 +93,7 @@ build CMakeFiles/cpp.dir/Student.cpp.obj: CXX_COMPILER__cpp_Debug C$:/Users/Pars
 #############################################
 # Link the executable cpp.exe
 
-build cpp.exe: CXX_EXECUTABLE_LINKER__cpp_Debug CMakeFiles/cpp.dir/main.cpp.obj CMakeFiles/cpp.dir/course.cpp.obj CMakeFiles/cpp.dir/Person.cpp.obj CMakeFiles/cpp.dir/Student.cpp.obj
+build cpp.exe: CXX_EXECUTABLE_LINKER__cpp_Debug CMakeFiles/cpp.dir/main.cpp.obj CMakeFiles/cpp.dir/course.cpp.obj CMakeFiles/cpp.dir/Person.cpp.obj CMakeFiles/cpp.dir/Student.cpp.obj CMakeFiles/cpp.dir/Professor.cpp.obj CMakeFiles/cpp.dir/University.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\cpp.dir
